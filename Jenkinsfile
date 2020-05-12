@@ -3,7 +3,8 @@ node{
   git 'https://github.com/MouaadKHELLOU/AgileProjet'
   }
   stage('Compile-Package'){
-  def mvnHome = tool name: '', type: 'maven'
-  sh "${mvnHome}/bin/mvn package"
+ // def mvnHome = tool name: '', type: 'maven'
+    def mvnHome = tool 'Default'
+ // sh "${mvnHome}/bin/mvn package"
   }
 }
