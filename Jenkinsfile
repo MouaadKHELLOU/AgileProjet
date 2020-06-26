@@ -1,3 +1,4 @@
+//jenkinsfile
 node{
   stage('SCM Checkout'){
   git 'https://github.com/MouaadKHELLOU/AgileProjet'
